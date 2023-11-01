@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-            Schema::create('Patients', function (Blueprint $table) {
+            Schema::create('patient', function (Blueprint $table) {
             $table->id('patient_id');
             $table->unsignedBigInteger('user_id');
             $table->integer('addiction_level')->unsigned()->check('addiction_level >= 1 AND addiction_level <= 5');
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->integer('sleepiness_score')->unsigned()->check('sleepiness_score >= 1 AND sleepiness_score <= 5');
             $table->integer('anxiety_score')->unsigned()->check('anxiety_score >= 1 AND anxiety_score <= 5');
             $table->integer('depression_score')->unsigned()->check('depression_score >= 1 AND depression_score <= 5');
-            $table->foreign('user_id')->references('user_id')->on('users');
+            $table->foreign('user_id')->references('user_id')->on('user');
         });
     }
 

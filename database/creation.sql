@@ -40,14 +40,25 @@ CREATE TABLE Admin {
     permissions INT CHECK (presmissions >= 0 AND premissions <= 15) , -- binary 1111
     FOREIGN KEY (user_id) REFERENCES User(user_id)
 };
--- 5 Quiz
+
+-- 5 Question
+CREATE TABLE Question (
+    question_id INT AUTO_INCREMENT PRIMARY KEY,
+    text TEXT,
+    type ENUM('Multiple Choice', 'Open Text', 'True/False', 'Other'),
+    options JSON,
+    points INT,
+    display_order INT,
+    dependencies JSON
+);
+-- 6 Quiz
 CREATE TABLE Quiz{
     quiz_id INT AUTO_INCREMENT PRIMARY KEY,
     patient_id INT,
     date DATE,
     FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
 };
--- 6 Quiz_Response
+-- 7 Quiz_Response
 CREATE TABLE Quiz_Response (
     response_id INT AUTO_INCREMENT PRIMARY KEY,
     quiz_id INT,
@@ -57,16 +68,6 @@ CREATE TABLE Quiz_Response (
     comments TEXT,
     FOREIGN KEY (quiz_id) REFERENCES Quiz(quiz_id),
     FOREIGN KEY (question_id ) REFERENCES Question(Question_id)
-);
--- 7 Question
-CREATE TABLE Question (
-    question_id INT AUTO_INCREMENT PRIMARY KEY,
-    text TEXT,
-    type ENUM('Multiple Choice', 'Open Text', 'True/False', 'Other'),
-    options JSON,
-    points INT,
-    display_order INT,
-    dependencies JSON
 );
 -- 8 Alerts
 CREATE TABLE Alerts (
