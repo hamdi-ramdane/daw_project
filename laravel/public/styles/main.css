@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: tomato;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
