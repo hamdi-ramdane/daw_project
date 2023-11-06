@@ -2,22 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
+$cntls = 'App\Http\Controllers\\';
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/quiz', function () {
-    return view('quiz');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/profile', function () {
-    return view('profile');
-});
-Route::get('/admin', function () {
-    return view('admin');
-});
+Route::get('/', $cntls.'HomeController@index');
+
+Route::get('/quiz', $cntls.'QuizController@index');
+
+Route::get('/login', $cntls.'LoginController@index');
+
+Route::get('/register', $cntls.'RegisterController@index');
+
+Route::get('/profile', $cntls.'ProfileController@index');
+
+Route::get('/admin', $cntls.'AdminController@index');
