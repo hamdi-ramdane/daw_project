@@ -1,17 +1,5 @@
 
 -- 1 User
-INSERT INTO user (first_name, last_name, gender, date_of_birth, email, password) VALUES
-('John', 'Doe', 'Male', '1990-05-15', 'john.doe@example.com', 'password123'),
-('Jane', 'Smith', 'Female', '1985-11-20', 'jane.smith@example.com', 'securepass'),
-('Michael', 'Johnson', 'Male', '1995-03-10', 'michael.j@example.com', 'mike123'),
-('Emily', 'Brown', 'Female', '1988-07-02', 'emily.b@example.com', 'pass1234'),
-('David', 'Williams', 'Male', '1992-09-30', 'david.w@example.com', 'davidpass'),
-('Sarah', 'Miller', 'Female', '1991-12-25', 'sarah.m@example.com', 'sarah123'),
-('Daniel', 'Anderson', 'Male', '1993-04-05', 'daniel.a@example.com', 'danielpass'),
-('Olivia', 'Davis', 'Female', '1987-08-12', 'olivia.d@example.com', 'oliviapass'),
-('William', 'Wilson', 'Male', '1994-06-18', 'william.w@example.com', 'will123'),
-('Ava', 'Moore', 'Female', '1996-01-08', 'ava.m@example.com', 'avapass');
-
 INSERT INTO user (first_name, last_name, gender, date_of_birth, email, passwd) VALUES
     ('Rick', 'Sanchez', 'Male', '1958-05-16', 'rick@example.com', 'WubbaLubbaDubDub'),
     ('Morty', 'Smith', 'Male', '2002-03-12', 'morty@example.com', 'OhGeez'),
@@ -57,7 +45,16 @@ INSERT INTO admin (user_id, role, permissions) VALUES
     (12, 'Administrator', 7), -- Binary: 0111
     (13, 'Moderator', 3); -- Binary: 0011
 
--- 8  Alert 
+-- 5 Quiz
+INSERT INTO quiz (patient_id, quiz_date, quiz_score) VALUES
+    (1, '2023-11-01', 75),
+    (2, '2023-11-02', 92),
+    (3, '2023-11-03', 60),
+    (4, '2023-11-04', 85),
+    (5, '2023-11-05', 78);
+
+
+-- 6  Alert 
 INSERT INTO alert (patient_id, alert_date, alert_type) VALUES
     (1, '2023-11-06 08:15:00', 'Critical'),
     (2, '2023-11-06 10:30:00', 'High'),
@@ -65,7 +62,7 @@ INSERT INTO alert (patient_id, alert_date, alert_type) VALUES
     (4, '2023-11-06 14:20:00', 'Low'),
     (5, '2023-11-06 16:55:00', 'Critical');
 
--- 9  Message
+-- 7  Message
 INSERT INTO message (sender_id, receiver_id, content, message_date)VALUES
     (1, 2, 'Hello, how are you?', '2023-11-06 09:30:00'),
     (2, 1, 'Im doing well, thanks!', '2023-11-06 09:35:00'),
@@ -73,7 +70,7 @@ INSERT INTO message (sender_id, receiver_id, content, message_date)VALUES
     (1, 3, 'Sure, what do you need?', '2023-11-06 10:20:00'),
     (4, 2, 'Meeting tomorrow at 3 PM.', '2023-11-06 12:45:00');
 
--- 10 Usage Statistics
+-- 8 Usage Statistics
 INSERT INTO usage_statistic (user_id, stats_date)VALUES
     (1, '2023-01-10'),
     (2, '2023-01-12'),

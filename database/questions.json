@@ -1,0 +1,323 @@
+[
+    {
+        "quiz_id": 1,
+        "question": "How many hours per day do you spend playing video games?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you neglect or avoid other responsibilities to play games?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Have you tried unsuccessfully to control, cut back, or stop your gaming activities?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you feel restless or irritable when you're not playing games?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Have you jeopardized or lost a significant relationship, job, or educational or career opportunity because of gaming?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you continue to play games despite knowing that it's causing problems in your life?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Have you experienced physical health issues such as eye strain or sleep disturbances due to excessive gaming?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you find yourself thinking about gaming even when you are not playing?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Have you lied to family, friends, or others about how much you game?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you use gaming as a way to escape from problems or negative emotions?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "How often do you prioritize gaming over social activities?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you neglect personal hygiene or self-care due to gaming?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Have you missed important events or deadlines because of gaming?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you feel a sense of euphoria or excitement while gaming?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "How often do you find it difficult to stop gaming once you've started?"
+    },
+    {
+        "quiz_id": 1,
+        "quiz_type": "mchoice",
+        "question": "Do you experience withdrawal symptoms when not playing games?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "How often do you game to escape from real-life problems?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you neglect or lose interest in hobbies or activities you used to enjoy due to gaming?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Have you borrowed money or sold items to fund your gaming habit?"
+    },
+    {
+        "quiz_id": 1,
+        "question": "Do you feel a loss of control over your gaming habits?"
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "How often do you feel a persistent sad, anxious, or 'empty' mood?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you experience a loss of interest or pleasure in activities you once enjoyed?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Have you noticed significant changes in your appetite or weight?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you have trouble falling asleep, staying asleep, or experiencing excessive sleep?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you feel restless or have trouble sitting still, or do you feel slowed down?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Is your energy level consistently low or fluctuating?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you experience feelings of worthlessness or excessive guilt?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Is your ability to think, concentrate, or make decisions impaired?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Have you had recurring thoughts of death or suicide, or have you attempted suicide?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Have you lost interest in personal appearance or hygiene?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you avoid social activities or isolate yourself from others?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Have you experienced a significant change in your weight or appetite recently?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you struggle to find joy or pleasure in activities that used to bring you happiness?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Is it difficult for you to focus on tasks or make decisions?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Have you noticed changes in your sleep patterns, such as insomnia or oversleeping?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you experience physical symptoms like headaches, stomachaches, or aches and pains without a clear cause?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you often feel irritable or agitated without a clear reason?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Are you more self-critical than usual, feeling a sense of worthlessness or inadequacy?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Do you find it challenging to engage in activities or hobbies you used to enjoy?" 
+    },
+    { 
+        "quiz_id": 2, 
+        "question": "Have you experienced a significant change in your motivation levels?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you often have difficulty paying attention to details and making careless mistakes?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Is it challenging for you to sustain attention in tasks or play activities?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you frequently seem to not listen when spoken to directly?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you have difficulty following through on instructions or completing tasks?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Is organization a struggle for you, and do you avoid or delay tasks that require sustained mental effort?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Are you easily distracted by unrelated stimuli or external events?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you forget to do daily activities, such as forgetting to do chores or keep appointments?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you frequently shift from one uncompleted activity to another?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Is it difficult for you to sit still or remain seated in situations where it is expected?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you often run or climb in situations where it is inappropriate or feel restless in situations where you should be calm?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you have difficulty playing or engaging in activities quietly?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Is it common for you to talk excessively?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you interrupt or intrude on others' conversations or games?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you have difficulty waiting your turn or waiting in line?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you frequently interrupt or finish others' sentences?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Have you experienced symptoms of hyperactivity-impulsivity since childhood?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do your symptoms significantly interfere with your daily functioning at work, school, or in social relationships?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Do you often feel restless or have a sense of inner restlessness even during quiet activities?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Have you experienced a pattern of inattention and/or hyperactivity-impulsivity for at least six months?" 
+    },
+    { 
+        "quiz_id": 3, 
+        "question": "Have these symptoms caused significant impairment before the age of 12?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "How often do you have trouble falling asleep at night?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you frequently wake up during the night and have difficulty returning to sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Is it common for you to wake up too early in the morning and struggle to go back to sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you often feel tired or groggy upon waking, even after a full night's sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Is it challenging for you to stay awake and alert during the day?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you find yourself frequently relying on sleep aids or medications to fall asleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Have you noticed a decline in your performance at work, school, or daily activities due to lack of sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you experience irritability, mood swings, or difficulty concentrating due to lack of sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Have you made significant changes to your bedtime routine or environment to improve sleep with little success?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you consume caffeinated beverages or stimulants close to bedtime?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Is it difficult for you to relax and unwind before bedtime?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you frequently experience racing thoughts or worry about sleep when trying to fall asleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Have you noticed an increase in sleep difficulties during periods of stress or major life changes?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you engage in stimulating activities, such as watching TV or using electronic devices, before bedtime?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Is it challenging for you to maintain a consistent sleep schedule, going to bed and waking up at the same time every day?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you have a comfortable and supportive sleep environment, including a quality mattress and pillows?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Have you sought professional help or advice for your sleep difficulties?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you have a history of mental health issues, such as anxiety or depression, that may impact your sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Have you tried relaxation techniques, such as deep breathing or meditation, to improve your sleep?" 
+    },
+    { 
+        "quiz_id": 4, 
+        "question": "Do you engage in regular physical activity, and if so, is it close to bedtime?" 
+    }
+]

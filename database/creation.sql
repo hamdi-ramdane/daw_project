@@ -22,7 +22,7 @@ CREATE TABLE patient{
     sleepiness_score INT CHECK (sleepiness_score >= 1 AND spleepiness_score <= 5),
     anxiety_score INT CHECK (anxiety_score >= 1 AND anxiety_score <= 5),
     depression_score INT CHECK (depression_score >= 1 AND depression_score <= 5),
-    FOREIGN KEY (user_id) REFERENCES User(user_id)
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
 };
 -- 3 Doctor ✓
 CREATE TABLE doctor{
@@ -31,7 +31,7 @@ CREATE TABLE doctor{
     specialty VARCHAR(50),
     schedualed_sessions INT,
     work_years INT, -- extra
-    FOREIGN KEY (user_id) REFERENCES User(user_id)
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
 };
 -- 4 Admin ✓
 CREATE TABLE admin {
@@ -39,58 +39,39 @@ CREATE TABLE admin {
     user_id INT,
     admin_role ENUM('Superadmin', 'Administrator', 'Moderator'),
     permissions INT CHECK (presmissions >= 0 AND premissions <= 15) , -- binary 1111
-    FOREIGN KEY (user_id) REFERENCES User(user_id)
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
 };
 
--- 5 Question ✓
-CREATE TABLE question (
-    question_id INT AUTO_INCREMENT PRIMARY KEY,
-    content TEXT,
-    q_type ENUM('Multiple Choice', 'Open Text', 'True/False', 'Other'),
-    options JSON,
-    points INT,
-    display_order INT
-);
--- 6 Quiz
+-- 5 Quiz
 CREATE TABLE quiz{
     quiz_id INT AUTO_INCREMENT PRIMARY KEY,
     patient_id INT,
     quiz_date DATE,
-    FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
+    quiz_score INT, -- between 0 and 100
+    FOREIGN KEY (patient_id) REFERENCES patient(patient_id)
 };
--- 7 Quiz_Response
-CREATE TABLE quiz_response (
-    response_id INT AUTO_INCREMENT PRIMARY KEY,
-    quiz_id INT,
-    question_id INT,
-    answer VARCHAR(255),
-    score INT,
-    comments TEXT,
-    FOREIGN KEY (quiz_id) REFERENCES Quiz(quiz_id),
-    FOREIGN KEY (question_id ) REFERENCES Question(Question_id)
-);
--- 8 Alerts ✓
+-- 6 Alerts ✓
 CREATE TABLE alert (
     alert_id INT AUTO_INCREMENT PRIMARY KEY,
     patient_id INT,
     alert_date TIMESTAMP,
     alert_type ENUM('Critical', 'High', 'Medium', 'Low'),
-    FOREIGN KEY (patient_id) REFERENCES Patient(patient_id)
+    FOREIGN KEY (patient_id) REFERENCES patient(patient_id)
 );
--- 9 Messages ✓
+-- 7 Messages ✓
 CREATE TABLE message (
     message_id INT AUTO_INCREMENT PRIMARY KEY,
     sender_id INT,
     receiver_id INT,
     content TEXT,
     message_date DATETIME,
-    FOREIGN KEY (sender_id) REFERENCES User(user_id),
-    FOREIGN KEY (receiver_id) REFERENCES User(user_id)
+    FOREIGN KEY (sender_id) REFERENCES user(user_id),
+    FOREIGN KEY (receiver_id) REFERENCES user(user_id)
 );
--- 10 Usage_Statistics ✓
+-- 8 Usage_Statistics ✓
 CREATE TABLE usage_Statistic(
     statistic_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
     stats_date DATE,
-    FOREIGN KEY (user_id) REFERENCES User(user_id),
+    FOREIGN KEY (user_id) REFERENCES user(user_id),
 );
