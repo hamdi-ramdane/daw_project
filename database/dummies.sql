@@ -32,7 +32,7 @@ VALUES
     (5, 1, 10, 40, 3, 1, 4, 3);
 
 -- 3 Doctor
-INSERT INTO doctor (user_id, specialty, scheduled_sessions, work_years) VALUES
+INSERT INTO doctor (user_id, specialty, schedualed_sessions, work_years) VALUES
     (6, 'Cardiologist', 10, 15),
     (7, 'Pediatrician', 8, 20),
     (8, 'Dermatologist', 12, 10),
@@ -40,7 +40,7 @@ INSERT INTO doctor (user_id, specialty, scheduled_sessions, work_years) VALUES
     (10, 'Orthopedic Surgeon', 15, 25);
 
 -- 4 Admin
-INSERT INTO admin (user_id, role, permissions) VALUES
+INSERT INTO admin (user_id, admin_role, permissions) VALUES
     (11, 'Superadmin', 15), -- Binary: 1111
     (12, 'Administrator', 7), -- Binary: 0111
     (13, 'Moderator', 3); -- Binary: 0011

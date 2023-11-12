@@ -14,9 +14,4 @@
         <a href="/profile">Profile</a>
         <a href="/admin">Admin</a>
     </nav>
-    <ul>
-    @foreach($users as $user)
-        <li>{{ $user->first_name }}</li>
-    @endforeach
-    </ul>
 @endsection

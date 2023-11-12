@@ -6,11 +6,15 @@ $cntls = 'App\Http\Controllers\\';
 
 Route::get('/', $cntls.'HomeController@index');
 
+Route::get('/auth', $cntls.'LoginController@index');
+
+Route::get('/auth/register', $cntls.'LoginController@index');
+
 Route::get('/quiz', $cntls.'QuizController@index');
-
-Route::get('/login', $cntls.'LoginController@index');
-
-Route::get('/register', $cntls.'RegisterController@index');
+Route::get('/quiz/addiction', $cntls.'QuizController@index');
+Route::get('/quiz/depression', $cntls.'QuizController@index');
+Route::get('/quiz/adhd', $cntls.'QuizController@index');
+Route::get('/quiz/insomnia', $cntls.'QuizController@index');
 
 Route::get('/profile', $cntls.'ProfileController@index');
 
