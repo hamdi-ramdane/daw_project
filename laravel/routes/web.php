@@ -6,9 +6,8 @@ $cntls = 'App\Http\Controllers\\';
 
 Route::get('/', $cntls.'HomeController@index');
 
-Route::get('/auth', $cntls.'LoginController@index');
-
-Route::get('/auth/register', $cntls.'LoginController@index');
+Route::get('/auth', $cntls.'AuthController@index');
+Route::get('/auth/register', $cntls.'AuthController@register');
 
 Route::get('/quiz', $cntls.'QuizController@index');
 Route::get('/quiz/addiction', $cntls.'QuizController@index');
