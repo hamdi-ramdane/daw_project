@@ -3,11 +3,11 @@
 @section("styles")
     <link rel="stylesheet" href="/styles/home.css">
     
-@section("title" ,"Home")
+@section("title" ,"Pixel Analytica")
 
 @section("content")
     <h1>{{ $name }} </h1>
-    <h1>Welcome to Pixel Recovery </h1>
+    <h1>Welcome to Pixel Analytica</h1>
     <nav>
         <a href="/quiz">Quiz</a>
         <a href="/auth">Login</a>
