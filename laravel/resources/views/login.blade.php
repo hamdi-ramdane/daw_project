@@ -6,6 +6,7 @@
 
 @section("content")
     <form action="" method="POST">
+        @csrf
         <input name="email" placeholder="Email">
         <input name="password" placeholder="Password">
         <button>Login</button>

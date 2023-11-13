@@ -6,16 +6,17 @@
 
 @section("content")
     <form action="" method="POST">
-        <input name="first_name" placeholder="First Name">
-        <input name="last_name" placeholder="Last Name">
-        <input name="email" placeholder="Email">
-        <input name="password" placeholder="Passowrd">
-        <input name="password_check" placeholder="ReType Password">
-        <div class="gender">
+        @csrf
+        <input name="first_name" placeholder="First Name" value="rick">
+        <input name="last_name" placeholder="Last Name" value="morty">
+        <input name="email" placeholder="Email" value="ricknmorty@gmail.com">
+        <input name="password" placeholder="Passowrd" value="mypassword123">
+        <input name="password_check" placeholder="ReType Password" value="mypassword123">
+        <div class="gender" name="gender">
             <label> Gender </label>
             <select>
-                <option>Male</option>
-                <option>Female</option>
+                <option value="male" >Male</option>
+                <option value="female" >Female</option>
             </select>
         </div>
         <input type="date" name="date_of_birth" >
