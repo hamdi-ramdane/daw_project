@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id('quiz_id');
             $table->unsignedBigInteger('patient_id');
             $table->date('date');
+            $table->integer('quiz_score');
             $table->foreign('patient_id')->references('patient_id')->on('patient');
+            $table->timestamps();
         });
     }
 

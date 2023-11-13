@@ -12,11 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin', function (Blueprint $table) {
-            $table->id('doctor_id');
+            $table->id('admin_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('specialty', 50);
-            $table->integer('scheduled_sessions');
+            $table->enum('admin_role', ['Superadmin','Administrator','Moderator']);
+            $table->integer('permissions')->unsigned()->check('permissions >= 0 AND permissions <= 15');
             $table->foreign('user_id')->references('user_id')->on('user');
+            $table->timestamps();
         });
     }
 
