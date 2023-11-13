@@ -1,4 +1,4 @@
-@extends("layout")
+@extends("layouts.main")
 
 @section("styles")
     <link rel="stylesheet" href="/styles/home.css">
@@ -11,7 +11,7 @@
     <nav>
         <a href="/quiz">Quiz</a>
         <a href="/auth">Login</a>
-        <a href="/register">Register</a>
+        <a href="/auth/register">Register</a>
         <a href="/profile">Profile</a>
         <a href="/admin">Admin</a>
     </nav>

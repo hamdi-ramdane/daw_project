@@ -8,6 +8,7 @@
     <title>@yield("title")</title>
 </head>
 <body>
+    <a href="/" class="logo">Home</a>
     @yield('content')
 </body>
 </html>
