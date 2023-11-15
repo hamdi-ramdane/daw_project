@@ -22,24 +22,36 @@ use App\Http\Resources\AlertResource;
 use App\Http\Resources\UsageStatsResource;
 class ApiController extends Controller
 {
-    public function users(){
-        $user = User::all()[0];
-        $patient = Patient::all()[0];
-        $doctor = Doctor::all()[0];
-        $admin = Admin::all()[0];
-        $quiz = Quiz::all()[0];
-        $message = Message::all()[0];
-        $alert = Alert::all()[0];
-        $usageStats = UsageStats::all()[0];
+    public function data($table){
+        switch($table){
+            case 'user':
+                $user = User::all();
+                return UserResource::collection($user);
+            case 'patient':
+                $patient = Patient::all();
+                return PatientResource::collection($patient);
+            case 'doctor':
+                $doctor = Doctor::all();
+                return DoctorResource::collection($doctor);
+            case 'admin':
+                $admin = Admin::all();
+                return AdminResource::collection($admin);
+            case 'quiz':
+                $quiz = Quiz::all();
+                return QuizResource::collection($quiz);
+            case 'message':
+                $message = Message::all();
+                return MessageResource::collection($message);
+            case 'alert':
+                $alert = Alert::all();
+                return AlertResource::collection($alert);
+            case 'usageStats':
+                $usageStats = UsageStats::all();
+                return UsageStatsResource::collection($usageStats);
+            default: 
+                return "$table is not a table";
+        }
 
-        // return new UserResource($user);
-        // return new PatientResource($patient);
-        // return new DoctorResource($doctor);
-        // return new AdminResource($admin);
-        // return new QuizResource($quiz);
-        // return new MessageResource($message);
-        // return new AlertResource($alert);
-        return new UsageStatsResource($usageStats);
     }
     public function login(){
         return "login";

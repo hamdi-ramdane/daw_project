@@ -9,4 +9,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 $path = "App\Http\Controllers\Api\\";
-Route::get("/users",$path."ApiController@users");
+Route::get("/data/{table}",$path."ApiController@data");
