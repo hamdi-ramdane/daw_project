@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id('doctor_id');
             $table->unsignedBigInteger('user_id');
             $table->string('specialty', 50);
-            $table->integer('scheduled_sessions');
+            $table->integer('schedualed_sessions');
             $table->integer('years_of_exp');
             $table->foreign('user_id')->references('user_id')->on('user');
             $table->timestamps();

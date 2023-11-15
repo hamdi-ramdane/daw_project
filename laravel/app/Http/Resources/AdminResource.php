@@ -7,13 +7,14 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class AdminResource extends JsonResource
 {
-    /**
-     * Transform the resource into an array.
-     *
-     * @return array<string, mixed>
-     */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'adminID' => $this->admin_id,
+            'userID' => $this->user_id,
+            'role' => $this->admin_role,
+            'perms' => $this->permissions,
+        ];
+ 
     }
 }

@@ -5,15 +5,14 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class UsageStats extends JsonResource
+class UsageStatsResource extends JsonResource
 {
-    /**
-     * Transform the resource into an array.
-     *
-     * @return array<string, mixed>
-     */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'statsID' => $this->stats_id,
+            'user_id' => $this->user_id,
+            'date' => $this->stats_date,
+        ];
     }
 }

@@ -7,12 +7,15 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class MessageResource extends JsonResource
 {
-    /*     * Transform the resource into an array.
-     *
-     * @return array<string, mixed>
-     */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'messageID' => $this->message_id,
+            'senderID' => $this->sender_id,
+            'receiverID' => $this->receiver_id,
+            'content' => $this->content,
+            'date' => $this->message_date,
+        ];
+ 
     }
 }

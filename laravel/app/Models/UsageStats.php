@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class UsageStats extends Model
 {
-    protected $table = "usage_statistic";
+    protected $table = "usage_stats";
     use HasFactory;
 }
