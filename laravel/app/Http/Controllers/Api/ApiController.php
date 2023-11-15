@@ -49,7 +49,15 @@ class ApiController extends Controller
                 $usageStats = UsageStats::all();
                 return UsageStatsResource::collection($usageStats);
             default: 
-                return "$table is not a table";
+                return "$table is not a table, Try :"
+                ."\n/user"
+                ."\n/patient"
+                ."\n/doctor"
+                ."\n/admin"
+                ."\n/quiz"
+                ."\n/message"
+                ."\n/alert"
+                ."\n/usageStats";
         }
 
     }
