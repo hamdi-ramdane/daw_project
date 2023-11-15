@@ -8,8 +8,8 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('usage_statistic', function (Blueprint $table) {
-            $table->id('statistic_id');
+        Schema::create('usage_stats', function (Blueprint $table) {
+            $table->id('stats_id');
             $table->unsignedBigInteger('user_id');
             $table->date('stats_date');
             $table->foreign('user_id')->references('user_id')->on('user');

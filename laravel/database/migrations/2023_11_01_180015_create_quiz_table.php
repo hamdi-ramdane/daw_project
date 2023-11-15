@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('quiz', function (Blueprint $table) {
             $table->id('quiz_id');
             $table->unsignedBigInteger('patient_id');
-            $table->date('date');
+            $table->date('quiz_date');
             $table->integer('quiz_score');
             $table->foreign('patient_id')->references('patient_id')->on('patient');
             $table->timestamps();

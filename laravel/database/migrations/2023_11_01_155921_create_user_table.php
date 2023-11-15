@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id('user_id'); // Auto-incrementing primary key
             $table->string('first_name', 50);
             $table->string('last_name', 50);
+            $table->string('username', 50)->unique();
             $table->enum('gender', ['Male', 'Female']);
             $table->date('date_of_birth')->nullable(); // Date of birth can be NULL
             $table->string('email', 255)->unique();
