@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,6 +20,7 @@ use App\Http\Resources\QuizResource;
 use App\Http\Resources\MessageResource;
 use App\Http\Resources\AlertResource;
 use App\Http\Resources\UsageStatsResource;
+
 class ApiController extends Controller
 {
     public function data($table){
