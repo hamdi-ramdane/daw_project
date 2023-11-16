@@ -1,38 +1,39 @@
 
 -- 1 User
-INSERT INTO user (first_name, last_name, gender, date_of_birth, email, passwd) VALUES
-    ('Rick', 'Sanchez', 'Male', '1958-05-16', 'rick@example.com', 'WubbaLubbaDubDub'),
-    ('Morty', 'Smith', 'Male', '2002-03-12', 'morty@example.com', 'OhGeez'),
-    ('Walter', 'White', 'Male', '1965-07-30', 'walter@example.com', 'Heisenberg'),
-    ('Jesse', 'Pinkman', 'Male', '1984-01-21', 'jesse@example.com', 'YoBitch'),
-    ('Gus', 'Fring', 'Male', '1956-11-23', 'gus@example.com', 'LosPollosHermanos'),
-    ('Skyler', 'White', 'Female', '1970-09-18', 'skyler@example.com', 'MoneyLaundering'),
-    ('Hank', 'Schrader', 'Male', '1969-03-15', 'hank@example.com', 'Minerals'),
-    ('Hector', 'Salamanca', 'Male', '1940-02-21', 'hector@example.com', 'DingDing'),
-    ('Peter', 'Griffin', 'Male', '1970-06-06', 'peter@example.com', 'FreakinSweet'),
-    ('Lois', 'Griffin', 'Female', '1974-12-22', 'lois@example.com', 'FamilyGuy123'),
-    ('Stewie', 'Griffin', 'Male', '2001-04-03', 'stewie@example.com', 'VictoryIsMine'),
-    ('Brian', 'Griffin', 'Male', '1996-08-08', 'brian@example.com', 'GentlemanAndScholar'),
-    ('Rick', 'Sanchez', 'Male', '1958-05-16', 'rick2@example.com', 'WubbaLubbaDubDub2'),
-    ('Morty', 'Smith', 'Male', '2002-03-12', 'morty2@example.com', 'OhGeez2'),
-    ('Meg', 'Griffin', 'Female', '1995-01-13', 'meg@example.com', 'Megatron'),
-    ('Glenn', 'Quagmire', 'Male', '1959-12-08', 'quagmire@example.com', 'Giggity'),
-    ('Jesse', 'Pinkman', 'Male', '1984-01-21', 'jesse2@example.com', 'YoBitch2'),
-    ('Saul', 'Goodman', 'Male', '1964-02-26', 'saul@example.com', 'BetterCallSaul'),
-    ('Tyrus', 'Kitt', 'Male', '1963-07-15', 'tyrus@example.com', 'SilentAssassin'),
-    ('Ernie', 'Hudson', 'Male', '1955-12-17', 'ernie@example.com', 'Ghostbuster');
+INSERT INTO user (first_name, last_name, username, gender, date_of_birth, email, passwd) VALUES
+    ('Rick', 'Sanchez', 'sanchezrick', 'Male', '1958-05-16', 'rick@example.com', 'WubbaLubbaDubDub'),
+    ('Morty', 'Smith', 'smithmorty', 'Male', '2002-03-12', 'morty@example.com', 'OhGeez'),
+    ('Walter', 'White', 'whitewalter', 'Male', '1965-07-30', 'walter@example.com', 'Heisenberg'),
+    ('Jesse', 'Pinkman', 'pinkmanjesse', 'Male', '1984-01-21', 'jesse@example.com', 'YoBitch'),
+    ('Gus', 'Fring', 'fringgus', 'Male', '1956-11-23', 'gus@example.com', 'LosPollosHermanos'),
+    ('Skyler', 'White', 'whiteskyler', 'Female', '1970-09-18', 'skyler@example.com', 'MoneyLaundering'),
+    ('Hank', 'Schrader', 'schraderhank', 'Male', '1969-03-15', 'hank@example.com', 'Minerals'),
+    ('Hector', 'Salamanca', 'salamancahector', 'Male', '1940-02-21', 'hector@example.com', 'DingDing'),
+    ('Peter', 'Griffin', 'griffinpeter', 'Male', '1970-06-06', 'peter@example.com', 'FreakinSweet'),
+    ('Lois', 'Griffin', 'griffinlois', 'Female', '1974-12-22', 'lois@example.com', 'FamilyGuy123'),
+    ('Stewie', 'Griffin', 'griffinstewie', 'Male', '2001-04-03', 'stewie@example.com', 'VictoryIsMine'),
+    ('Brian', 'Griffin', 'griffinbrian', 'Male', '1996-08-08', 'brian@example.com', 'GentlemanAndScholar'),
+    ('Rick', 'Sanchez', 'sanchezrick2', 'Male', '1958-05-16', 'rick2@example.com', 'WubbaLubbaDubDub2'),
+    ('Morty', 'Smith', 'smithmorty2', 'Male', '2002-03-12', 'morty2@example.com', 'OhGeez2'),
+    ('Meg', 'Griffin', 'griffinmeg', 'Female', '1995-01-13', 'meg@example.com', 'Megatron'),
+    ('Glenn', 'Quagmire', 'quagmireglenn', 'Male', '1959-12-08', 'quagmire@example.com', 'Giggity'),
+    ('Jesse', 'Pinkman', 'pinkmanjesse2', 'Male', '1984-01-21', 'jesse2@example.com', 'YoBitch2'),
+    ('Saul', 'Goodman', 'goodmansaul', 'Male', '1964-02-26', 'saul@example.com', 'BetterCallSaul'),
+    ('Tyrus', 'Kitt', 'kitttyrus', 'Male', '1963-07-15', 'tyrus@example.com', 'SilentAssassin'),
+    ('Ernie', 'Hudson', 'hudsonernie', 'Male', '1955-12-17', 'ernie@example.com', 'Ghostbuster');
+
 
 -- 2 Patient
-INSERT INTO patient (user_id, addiction_level, avg_hours_week, avg_hours_month, insomnia_score, sleepiness_score, anxiety_score, depression_score)
+INSERT INTO patient (user_id, addiction_score,depression_score , adhd_score ,insomnia_score )
 VALUES
-    (1, 3, 20, 80, 2, 3, 1, 4),
-    (2, 2, 15, 70, 1, 2, 3, 2),
-    (3, 4, 25, 100, 4, 5, 2, 1),
-    (4, 5, 35, 150, 5, 4, 5, 5),
-    (5, 1, 10, 40, 3, 1, 4, 3);
+    (1, 32, 20, 80, 21),
+    (2, 21, 15, 70, 18),
+    (3, 45, 25, 100, 43),
+    (4, 52, 35, 150, 55),
+    (5, 11, 10, 40, 39);
 
 -- 3 Doctor
-INSERT INTO doctor (user_id, specialty, schedualed_sessions, work_years) VALUES
+INSERT INTO doctor (user_id, specialty, schedualed_sessions, years_of_exp) VALUES
     (6, 'Cardiologist', 10, 15),
     (7, 'Pediatrician', 8, 20),
     (8, 'Dermatologist', 12, 10),
@@ -71,7 +72,7 @@ INSERT INTO message (sender_id, receiver_id, content, message_date)VALUES
     (4, 2, 'Meeting tomorrow at 3 PM.', '2023-11-06 12:45:00');
 
 -- 8 Usage Statistics
-INSERT INTO usage_statistic (user_id, stats_date)VALUES
+INSERT INTO usage_stats(user_id, stats_date)VALUES
     (1, '2023-01-10'),
     (2, '2023-01-12'),
     (3, '2023-01-15'),
