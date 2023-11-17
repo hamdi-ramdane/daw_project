@@ -16,7 +16,7 @@ return new class extends Migration
             $table->enum('gender', ['Male', 'Female']);
             $table->date('date_of_birth')->nullable(); // Date of birth can be NULL
             $table->string('email', 255)->unique();
-            $table->string('passwd', 255);
+            $table->string('password', 255);
             $table->timestamps();
         });
     }

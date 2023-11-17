@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Auth;
 
 class UserController extends Controller
 {
@@ -25,13 +26,13 @@ class UserController extends Controller
                 'gender'=>$request->gender,
                 'date_of_birth'=>$request->dateOfBirth,
                 'email'=>$request->email,
-                'passwd'=>$request->password
+                'passwd'=>bcrypt($request->password),
             ]);
             
             return response()->json([
                 'status' => true,
                 'message' => 'User Created Successfully',
-                'token' => $user->createToken("API TOKEN")->plainTextToken
+                'token' => $user->createToken($user->username)->plainTextToken
             ], 200);
  
         } catch (\Throwable $th) {
@@ -41,7 +42,33 @@ class UserController extends Controller
             ], 500);
         }
     }
-    public function login(){
+    public function login(Request $request){
+        try {
+            $validateUser = $request->validate([
+                'email' => 'required|email',
+                'password' => 'required'
+            ]);
+            if(!Auth::attempt($request->only('email','password'))){
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Email & Password do not match with our records.',
+                ], 401);
+            }
+            return "worked fine";
 
+            // $user = User::where('email', $request->email)->first();
+
+            // return response()->json([
+            //     'status' => true,
+            //     'message' => 'User Logged In Successfully',
+            //     'token' => $user->createToken($user->username)->plainTextToken
+            // ], 200);
+
+        } catch (\Throwable $th) {
+            return response()->json([
+                'status' => false,
+                'message' => $th->getMessage()
+            ], 500);
+        }
     }
 }
