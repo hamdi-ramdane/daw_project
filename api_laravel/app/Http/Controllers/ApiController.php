@@ -62,10 +62,10 @@ class ApiController extends Controller
         }
 
     }
-    public function login(){
-        return "login";
-    }
-    public function register(){
-        return "login";
+    public function index(){
+        $routes = "localhost:8000/api/data/{table}"
+        ."<br>localhost:8000/api/login"
+        ."<br>localhost:8000/api/register";
+        return $routes;
     }
 }

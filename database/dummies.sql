@@ -1,6 +1,6 @@
 
 -- 1 User
-INSERT INTO user (first_name, last_name, username, gender, date_of_birth, email, passwd) VALUES
+INSERT INTO user (first_name, last_name, username, gender, date_of_birth, email, `password`) VALUES
     ('Rick', 'Sanchez', 'sanchezrick', 'Male', '1958-05-16', 'rick@example.com', 'WubbaLubbaDubDub'),
     ('Morty', 'Smith', 'smithmorty', 'Male', '2002-03-12', 'morty@example.com', 'OhGeez'),
     ('Walter', 'White', 'whitewalter', 'Male', '1965-07-30', 'walter@example.com', 'Heisenberg'),

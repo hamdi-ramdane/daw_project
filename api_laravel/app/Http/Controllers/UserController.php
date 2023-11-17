@@ -26,7 +26,7 @@ class UserController extends Controller
                 'gender'=>$request->gender,
                 'date_of_birth'=>$request->dateOfBirth,
                 'email'=>$request->email,
-                'passwd'=>bcrypt($request->password),
+                'password'=>bcrypt($request->password),
             ]);
             
             return response()->json([
@@ -54,15 +54,14 @@ class UserController extends Controller
                     'message' => 'Email & Password do not match with our records.',
                 ], 401);
             }
-            return "worked fine";
 
-            // $user = User::where('email', $request->email)->first();
-
-            // return response()->json([
-            //     'status' => true,
-            //     'message' => 'User Logged In Successfully',
-            //     'token' => $user->createToken($user->username)->plainTextToken
-            // ], 200);
+            $user = User::where('email', $request->email)->first();
+            return $user->createToken($user->username)->plainTextToken;
+            return response()->json([
+                'status' => true,
+                'message' => 'User Logged In Successfully',
+                // 'token' => $user->createToken($user->username)->plainTextToken
+            ], 200);
 
         } catch (\Throwable $th) {
             return response()->json([
@@ -70,5 +69,8 @@ class UserController extends Controller
                 'message' => $th->getMessage()
             ], 500);
         }
+    }
+    public function logout(){
+        return "logged out ";
     }
 }
