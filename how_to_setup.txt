@@ -4,6 +4,7 @@ cd daw_project
 cd api_laravel
 composer install
 
+-> start xampp server (apache & mysql)
 -> localhost/phpmyadmin create a new database "pixelrecovery"
 
 php artisan migrate --seed

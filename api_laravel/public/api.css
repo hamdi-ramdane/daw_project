@@ -13,3 +13,18 @@ body{
     justify-content: center;
     align-items: center;
 }
+a{
+    color:black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+table{
+    background-color: white;
+}
+table td{
+    border:1px solid black;
+    padding:5px;
+}

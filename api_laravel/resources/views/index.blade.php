@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Pixel Recovery API</h1> 
-    <h3>{{ $_SERVER['HTTP_HOST'] }}/api/</h3>
+    <a href="{{ $_SERVER['HTTP_HOST'] }}/api/">{{ $_SERVER['HTTP_HOST'] }}/api/</a>
 </body>
 </html>

@@ -23,6 +23,9 @@ use App\Http\Resources\UsageStatsResource;
 
 class ApiController extends Controller
 {
+    public function index(){
+        return view('api');
+    }
     public function data($table){
         switch($table){
             case 'user':
@@ -62,10 +65,5 @@ class ApiController extends Controller
         }
 
     }
-    public function index(){
-        $routes = "localhost:8000/api/data/{table}"
-        ."<br>localhost:8000/api/login"
-        ."<br>localhost:8000/api/register";
-        return $routes;
-    }
+
 }
