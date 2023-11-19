@@ -1,0 +1,10 @@
+
+git clone https://github.com/hamdi-ramdane/daw_project.git
+cd daw_project
+cd api_laravel
+composer install
+
+-> localhost/phpmyadmin create a new database "pixelrecovery"
+
+php artisan migrate --seed
+php artisan serve
